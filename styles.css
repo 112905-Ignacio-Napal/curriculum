@@ -1,0 +1,39 @@
+.navbar :hover {
+  color: #1e88e5 !important;
+}
+
+.navbar-brand {
+  color: #1976d2 !important;
+}
+
+#hero-text {
+  color: #1976d2;
+  height: 46vh;
+  background-color: #e3f2fd;
+  background: linear-gradient(135deg, #ffffff55 25%, transparent 25%) -40px 0/
+      80px 80px,
+    linear-gradient(225deg, #ffffff 25%, transparent 25%) -40px 0/ 80px 80px,
+    linear-gradient(315deg, #ffffff55 25%, transparent 25%) 0px 0/ 80px 80px,
+    linear-gradient(45deg, #ffffff 25%, #e3f2fd 25%) 0px 0/ 80px 80px;
+}
+
+#hero-text h2 {
+  font-size: 22px;
+  color: #212529;
+}
+
+#hero-text h4 {
+  font-size: 18px;
+  color: #9b9d9e;
+}
+
+.hero-image {
+  height: 46vh;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background: linear-gradient(135deg, #0d47a155 25%, transparent 25%) -40px 0/
+      80px 80px,
+    linear-gradient(225deg, #0d47a1 25%, transparent 25%) -40px 0/ 80px 80px,
+    linear-gradient(315deg, #0d47a155 25%, transparent 25%) 0px 0/ 80px 80px,
+    linear-gradient(45deg, #0d47a1 25%, #e5e5f7 25%) 0px 0/ 80px 80px;
+}
