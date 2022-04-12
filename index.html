@@ -34,23 +34,165 @@
         <div class="row">
             <div id="hero-text" class="col-12 col-sm-6 d-flex flex-column justify-content-center align-items-center">
                 <h1 class="text-center font-weight-bold">Ignacio Napal</h1>
-                <h2 class="text-center font-weight-normal mt-4 fs-5">Full Stack Developer</h2>
-                <h4 class="fs-5"><span class="text-warning">Java</span> & <span class="text-primary">React</span>
+                <h2 class="text-center font-weight-normal mt-4 fs-5 text-dark">Full Stack Developer</h2>
+                <h4 class="fs-5 text-dark"><span class="text-warning">Java</span> & <span
+                        class="text-primary">React</span>
                 </h4>
             </div>
-            <div class="col-6 d-none d-sm-block hero-image">
-            </div>
-            <div class="col-12 d-sm-none hero-image">
+            <div class="col-6 d-none d-sm-block" id="hero-image">
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="row mt-4">
-            <div class="col-6">
+        <div id="about" class="row mt-4">
+            <div class="col-12">
                 <h3>About</h3>
+                <p>I am a developer in constant growth, currently focused on
+                    learning more about front end development with <strong>React</strong>.
+                </p>
+                <p>I like to help resolve group issues through research and
+                    communication.</p>
+                <p>I can easily comunicate with others to get done our
+                    objectives efficiently.</p>
             </div>
         </div>
+        <div id="experience" class="row mt-4">
+            <div class="col-12">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-1 mt-2 d-none d-md-inline">
+                            <span><strong>NOW</strong></span>
+                        </div>
+                        <div class="col-11">
+                            <h3>Experience</h3>
+                            <h4 class="fs-5">BAUFEST</h4>
+                            <h6 class="d-inline d-md-none">JULY 2021 - NOW</h6>
+                            <h4 class="fs-6">JUNIOR FULLSTACK DEVELOPER</h4>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-1 d-none d-md-inline">
+                            <span>JULY 2021</span>
+                        </div>
+                        <div class="col-11">
+                            <ul>
+                                <li>Development and maintenance of screens
+                                    according to the client's needs, with JSP, HTML and
+                                    CSS.</li>
+                                <li>Development of logic solutions, maintenance and
+                                    refactoring of Java code with SpringBoot</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="row mt-4">
+            <div class="col-12 col-sm-6">
+                <h3>Projects</h3>
+            </div>
+        </div>
+        <div id="skills" class="row mt-4">
+            <div class="col-12">
+                <h3>Skills</h3>
+                <ul>
+                    <li>JS | React</li>
+                    <li>Java | C# | Node</li>
+                    <li>HTML | CSS | Bootstrap | JSP</li>
+                    <li>SQL SERVER | Mongo DB</li>
+                    <li>Git</li>
+                    <li><strong>English B1 | Native Spanish</strong></li>
+                </ul>
+            </div>
+        </div>
+        <div id="contact" class="row">
+            <h3>Contact</h3>
+            <form novalidate class="needs-validation">
+                <div class="form-row align-items-center justify-content-center mt-2">
+                    <div class="col-12 col-sm-9">
+                        <div class="form-group is-invalid?">
+                            <!-- Revisar is-invalid -->
+                            <label class="mb-2">Reason</label>
+                            <div class="custom-control custom-radio">
+                                <input checked value="male" required type="radio" id="maleRb" name="gender"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="maleRb">Job Offer</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                                <input value="other" required type="radio" id="otherRb" name="gender"
+                                    class="custom-control-input">
+                                <label class="custom-control-label" for="otherRb">Page Design</label>
+                                <div class="invalid-feedback">Please choose a contact reason</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-9">
+                        <div class="form-group mt-4">
+                            <label for="name">Name</label>
+                            <input required id="name" class="form-control" type="text" name="name">
+                            <div class="invalid-feedback">
+                                Please provide a name.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-9">
+                        <div class="form-group mt-4">
+                            <label for="lastname">Lastname</label>
+                            <input required id="lastname" class="form-control" type="text" name="lastname">
+                            <div class="invalid-feedback">
+                                Please provide a lastname.
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-sm-9">
+                        <div class="form-group mt-4">
+                            <label for="phoneNumber">Phone</label>
+                            <input required id="phoneNumber" class="form-control" type="number" min="1" max="99"
+                                name="phoneNumber">
+                            <div id="invalidPhoneFeedback" class="invalid-feedback">
+                                Please provide a valid phone.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-9">
+                        <div class="form-group mt-4">
+                            <label for="email">Email</label>
+                            <input required id="email" class="form-control" type="text" name="email">
+                            <div id="invalidEmailFeedback" class="invalid-feedback">
+                                Please provide a valid email.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-9">
+                        <div class="form-group mt-4">
+                            <label for="description">Message</label>
+                            <textarea id="description" class="form-control" name="description" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row my-4">
+                    <div class="col-12 col-sm-9">
+                        <button id="sendButton" type="button" class="btn me-4">Send</button>
+                        <button class="btn btn-danger" type="button" class="btn">Clear</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
+    <footer class="container-fluid">
+        <div class="row py-4 bg-dark">
+            <div class="col-12 col-sm-6">
+                <a class="d-block" href="">inapalbusinnes@gmail.com</a>
+                <a href="https://www.linkedin.com/in/napalignacio/" target="_blank">Linkedin</a>
+
+            </div>
+            <div class="col-12 col-sm-6">
+                <a class="d-block" href="https://github.com/nachonapal" target="_blank">Personal Github</a>
+                <a href="https://github.com/112905-Ignacio-Napal" target="_blank">University Github</a>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
