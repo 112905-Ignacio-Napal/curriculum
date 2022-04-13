@@ -1,3 +1,7 @@
+body {
+  background-color: #ecf6fe;
+}
+
 .navbar :hover {
   color: #1e88e5 !important;
 }
@@ -50,6 +54,17 @@ textarea {
 
 footer a {
   text-decoration: none;
+}
+
+#experience ul {
+  list-style: inside;
+}
+
+#skills {
+  font-size: 24px;
+}
+#skills img {
+  width: 25px;
 }
 
 @media (max-width: 576px) {
