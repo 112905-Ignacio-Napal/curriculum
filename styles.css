@@ -1,5 +1,5 @@
 body {
-  background-color: #ecf6fe;
+  background-color: #ebf0f5;
 }
 
 .navbar :hover {
@@ -11,22 +11,19 @@ body {
 }
 
 #hero-text {
-  color: #1976d2;
+  color: #212529;
   height: 94vh;
-  background-color: #e3f2fd;
+  background-color: #ebf0f5;
   background: linear-gradient(135deg, #ffffff55 25%, transparent 25%) -40px 0/
       80px 80px,
     linear-gradient(225deg, #ffffff 25%, transparent 25%) -40px 0/ 80px 80px,
     linear-gradient(315deg, #ffffff55 25%, transparent 25%) 0px 0/ 80px 80px,
-    linear-gradient(45deg, #ffffff 25%, #e3f2fd 25%) 0px 0/ 80px 80px;
+    linear-gradient(45deg, #ffffff 25%, #ebf0f5 25%) 0px 0/ 80px 80px;
 }
 
-#hero-text h2 {
-  color: #212529;
-}
-
-#hero-text h4 {
-  color: #212529;
+h1,
+h3 {
+  color: #396ab4;
 }
 
 #hero-image {
@@ -45,7 +42,7 @@ textarea {
 }
 
 #sendButton {
-  background-color: #1976d2 !important;
+  background-color: #396ab4 !important;
   color: whitesmoke !important;
 }
 #sendButton:hover {
@@ -65,6 +62,19 @@ footer a {
 }
 #skills img {
   width: 25px;
+}
+
+.card {
+  background-color: gainsboro;
+}
+.card-body p {
+  color: darkslategray;
+}
+
+.card-img-top {
+  height: 14rem;
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 @media (max-width: 576px) {

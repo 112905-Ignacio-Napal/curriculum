@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">IN</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -88,11 +88,86 @@
             </div>
         </div>
         <div id="projects" class="row mt-4">
-            <div class="col-12 col-sm-6">
+            <div class="col-12">
                 <h3>Projects</h3>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center col-md-3 mt-4">
+                        <div class="card">
+                            <img src="/assets/img/project1.jpg" class="card-img-top"
+                                alt="spacex launches project image">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Spacex Launches</h5>
+                                <p class="card-text white">SPA with spaceX launches. Allows <b>filter</b> by name, date
+                                    and
+                                    status.
+                                    Alphabetical and chronological <b>order</b> and view the <b>detail</b> of each
+                                    launch.</p>
+                                <div class="mt-auto">
+                                    <a href="https://spacex-launches-nachonapal.vercel.app/" target="_blank"
+                                        class="btn btn-dark">Page</a>
+                                    <a href="https://github.com/nachonapal/spacex-launches" target="_blank"
+                                        class=" btn btn-primary">Code</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center col-md-3 mt-4">
+                        <div class="card">
+                            <img src="/assets/img/project2.jpg" class="card-img-top" alt="modal video project image">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Modal Window</h5>
+                                <p class="card-text white">A page with text and a play button to open a <b>modal
+                                        window</b>
+                                    watch a
+                                    video of landscapes</p>
+                                <div class="mt-auto">
+                                    <a href="https://nachonapal.github.io/modalWindowVideo/" target="_blank"
+                                        class="btn btn-dark">Page</a>
+                                    <a href="https://github.com/nachonapal/modalWindowVideo" target="_blank"
+                                        class=" btn btn-primary">Code</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 d-flex justify-content-center col-md-3 mt-4">
+                        <div class="card">
+                            <img src="/assets/img/project3.jpg" class="card-img-top" alt="spacex project">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">Md Challenge</h5>
+                                <p class="card-text white">3 pages for an interview challenge for Md Solutions</p>
+                                <div class="mt-auto">
+                                    <a href="https://nachonapal.github.io/mdChallenge/" target="_blank"
+                                        class="btn btn-dark">Page</a>
+                                    <a href="https://github.com/nachonapal/mdChallenge" target="_blank"
+                                        class="btn btn-primary">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center col-md-3 mt-4">
+                        <div class="card">
+                            <img src="/assets/img/project4.jpg" class="card-img-top" alt="spacex project">
+                            <div class="card-body flex-column">
+                                <h5 class="card-title">Bank application</h5>
+                                <p class="card-text white">Windows forms application made in c# connected to Microsoft
+                                    SQL
+                                    database. Banking interface to perform multiple
+                                    operations.</p>
+                                <div class="mt-auto">
+                                    <a href="https://github.com/nachonapal/TPBanco" target="_blank"
+                                        class="btn btn-primary">Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div id="skills" class="row mt-4">
+        <div id="skills" class="row mt-4 mb-4">
             <div class="col-12">
                 <h3 title="skills">Skills</h3>
                 <div class="row mt-4">
@@ -138,13 +213,12 @@
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <h5>Languages</h6>
-                        <div class="col-12">
-                            <p class="fs-6 d-inline me-4"><img src="/assets/img/united-states.png" alt="argentina flag">
-                                B1</p>
-                            <p class="fs-6 d-inline"><img src="/assets/img/argentina.png" alt="united states flag">
-                                NATIVE</p>
-                        </div>
+                    <div class="col-12">
+                        <p class="fs-6 d-inline me-4"><img src="/assets/img/united-states.png" alt="argentina flag">
+                            B1</p>
+                        <p class="fs-6 d-inline"><img src="/assets/img/argentina.png" alt="united states flag">
+                            NATIVE</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -157,14 +231,14 @@
                             <!-- Revisar is-invalid -->
                             <label class="mb-2">Reason</label>
                             <div class="custom-control custom-radio">
-                                <input checked value="male" required type="radio" id="maleRb" name="gender"
-                                    class="custom-control-input">
-                                <label class="custom-control-label" for="maleRb">Job Offer</label>
+                                <input checked value="Job Offer" required type="radio" id="jobOffer"
+                                    name="contactReason" class="custom-control-input">
+                                <label class="custom-control-label" for="jobOffer">Job Offer</label>
                             </div>
                             <div class="custom-control custom-radio">
-                                <input value="other" required type="radio" id="otherRb" name="gender"
+                                <input value="Page Design" required type="radio" id="pageDesign" name="contactReason"
                                     class="custom-control-input">
-                                <label class="custom-control-label" for="otherRb">Page Design</label>
+                                <label class="custom-control-label" for="pageDesign">Page Design</label>
                                 <div class="invalid-feedback">Please choose a contact reason</div>
                             </div>
                         </div>
@@ -191,8 +265,7 @@
                     <div class="col-12 col-sm-9">
                         <div class="form-group mt-4">
                             <label for="phoneNumber">Phone</label>
-                            <input required id="phoneNumber" class="form-control" type="number" min="1" max="99"
-                                name="phoneNumber">
+                            <input required id="phoneNumber" class="form-control" type="text" name="phoneNumber">
                             <div id="invalidPhoneFeedback" class="invalid-feedback">
                                 Please provide a valid phone.
                             </div>
@@ -201,7 +274,7 @@
                     <div class="col-12 col-sm-9">
                         <div class="form-group mt-4">
                             <label for="email">Email</label>
-                            <input required id="email" class="form-control" type="text" name="email">
+                            <input required id="email" class="form-control" type="email" name="email">
                             <div id="invalidEmailFeedback" class="invalid-feedback">
                                 Please provide a valid email.
                             </div>
@@ -217,7 +290,7 @@
                 <div class="row my-4">
                     <div class="col-12 col-sm-9">
                         <button id="sendButton" type="button" class="btn me-4">Send</button>
-                        <button class="btn btn-danger" type="button" class="btn">Clear</button>
+                        <button id="clearButton" class="btn btn-danger" type="button" class="btn">Clear</button>
                     </div>
                 </div>
             </form>
@@ -240,6 +313,8 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5742e26460.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="/index.js"></script>
 </body>
 
