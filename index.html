@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-lg-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">IN</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -21,7 +21,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    <a class="nav-link" aria-current="page" href="#about">About</a>
                     <a class="nav-link" href="#experience">Experience</a>
                     <a class="nav-link" href="#projects">Projects</a>
                     <a class="nav-link" href="#skills">Skills</a>
@@ -44,7 +44,7 @@
         </div>
     </div>
     <div class="container">
-        <div id="about" class="row mt-4">
+        <div id="about" class="row mt-4 section">
             <div class="col-12">
                 <h3>About</h3>
                 <p>I am a developer in constant growth, currently focused on
@@ -56,7 +56,7 @@
                     objectives efficiently.</p>
             </div>
         </div>
-        <div id="experience" class="row mt-4">
+        <div id="experience" class="row mt-4 section">
             <div class="col-12">
                 <div class="row">
                     <div class="row">
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </div>
-        <div id="projects" class="row mt-4">
+        <div id="projects" class="row mt-4 section">
             <div class="col-12">
                 <h3>Projects</h3>
                 <div class="row">
@@ -167,7 +167,7 @@
                 </div>
             </div>
         </div>
-        <div id="skills" class="row mt-4 mb-4">
+        <div id="skills" class="row mt-4 mb-4 section">
             <div class="col-12">
                 <h3 title="skills">Skills</h3>
                 <div class="row mt-4">
@@ -189,7 +189,7 @@
                         <i title="Bootstrap icon" class="fa-brands fa-bootstrap"></i>
                     </div>
                     <div class="col-6 col-md-3">
-                        <i>JSP</i>
+                        <i title="JSP">JSP</i>
                     </div>
                     <div class="col-6 col-md-3">
                         <i title="Java icon" class="fa-brands fa-java"></i>
@@ -203,32 +203,31 @@
                         <i title="node js icon" class="fa-brands fa-node-js"></i>
                     </div>
                     <div class="col-6 col-md-3">
-                        <i title="sql server icon" class=" fa-solid fa-database fs-6"> SQL Server</i>
+                        <i title="sql server" class=" fa-solid fa-database fs-6"><span> SQL Server</span></i>
                     </div>
                     <div class="col-6 col-md-3">
                         <i title="git icon" class="fa-brands fa-git-square"></i>
                     </div>
                     <div class="col-6 col-md-3">
-                        <i title="mongo db icon" class="fa-solid fa-database fs-6"> Mongo Db</i>
+                        <i title="mongo db" class="fa-solid fa-database fs-6"><span> Mongo Db</span></i>
                     </div>
                 </div>
                 <div class="row mt-4">
                     <div class="col-12">
-                        <p class="fs-6 d-inline me-4"><img src="/assets/img/united-states.png" alt="argentina flag">
-                            B1</p>
-                        <p class="fs-6 d-inline"><img src="/assets/img/argentina.png" alt="united states flag">
-                            NATIVE</p>
+                        <i class="fs-6 d-inline me-4 "><img src="/assets/img/united-states.png" alt="argentina flag">
+                            <span>B1</span></i>
+                        <i class="fs-6 d-inline "><img src="/assets/img/argentina.png" alt="united states flag">
+                            <span>NATIVE</span> </i>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="contact" class="row mt-4">
+        <div id="contact" class="row mt-4 section">
             <h3>Contact</h3>
-            <form novalidate class="needs-validation">
+            <form novalidate>
                 <div class="form-row align-items-center justify-content-center mt-2">
                     <div class="col-12 col-sm-9">
-                        <div class="form-group is-invalid?">
-                            <!-- Revisar is-invalid -->
+                        <div class="form-group">
                             <label class="mb-2">Reason</label>
                             <div class="custom-control custom-radio">
                                 <input checked value="Job Offer" required type="radio" id="jobOffer"
@@ -246,7 +245,7 @@
                     <div class="col-12 col-sm-9">
                         <div class="form-group mt-4">
                             <label for="name">Name</label>
-                            <input required id="name" class="form-control" type="text" name="name">
+                            <input placeholder="Name" required id="name" class="form-control" type="text" name="name">
                             <div class="invalid-feedback">
                                 Please provide a name.
                             </div>
@@ -255,7 +254,8 @@
                     <div class="col-12 col-sm-9">
                         <div class="form-group mt-4">
                             <label for="lastname">Lastname</label>
-                            <input required id="lastname" class="form-control" type="text" name="lastname">
+                            <input placeholder="Lastname" required id="lastname" class="form-control" type="text"
+                                name="lastname">
                             <div class="invalid-feedback">
                                 Please provide a lastname.
                             </div>
@@ -264,17 +264,9 @@
                     </div>
                     <div class="col-12 col-sm-9">
                         <div class="form-group mt-4">
-                            <label for="phoneNumber">Phone</label>
-                            <input required id="phoneNumber" class="form-control" type="text" name="phoneNumber">
-                            <div id="invalidPhoneFeedback" class="invalid-feedback">
-                                Please provide a valid phone.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-9">
-                        <div class="form-group mt-4">
                             <label for="email">Email</label>
-                            <input required id="email" class="form-control" type="email" name="email">
+                            <input placeholder="example@gmail.com" required id="email" class="form-control" type="email"
+                                name="email">
                             <div id="invalidEmailFeedback" class="invalid-feedback">
                                 Please provide a valid email.
                             </div>
@@ -282,8 +274,22 @@
                     </div>
                     <div class="col-12 col-sm-9">
                         <div class="form-group mt-4">
+                            <label for="phoneNumber">Phone</label>
+                            <input placeholder="+54351nnnnnnn" required id="phoneNumber" class="form-control" type="tel"
+                                name="phoneNumber">
+                            <div id="invalidPhoneFeedback" class="invalid-feedback">
+                                Please provide a valid phone.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-9">
+                        <div class="form-group mt-4">
                             <label for="description">Message</label>
-                            <textarea id="description" class="form-control" name="description" rows="3"></textarea>
+                            <textarea placeholder="Hi, I want to hire you as a React Developer JR" id="description"
+                                class="form-control" name="description" rows="3"></textarea>
+                            <div id="invalidPhoneFeedback" class="invalid-feedback">
+                                Please enter a message.
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -297,15 +303,17 @@
         </div>
     </div>
     <footer class="container-fluid">
-        <div class="row py-4 bg-dark">
-            <div class="col-12 col-sm-6">
-                <a class="d-block" href="">inapalbusinnes@gmail.com</a>
-                <a href="https://www.linkedin.com/in/napalignacio/" target="_blank">Linkedin</a>
-
-            </div>
-            <div class="col-12 col-sm-6">
-                <a class="d-block" href="https://github.com/nachonapal" target="_blank">Personal Github</a>
-                <a href="https://github.com/112905-Ignacio-Napal" target="_blank">University Github</a>
+        <div class="row py-2 bg-dark text-center">
+            <div class="col-12 d-flex flex-column flex-sm-row  justify-content-around">
+                <a class="d-block" href="mailto:inapalbusiness@gmail.com"><i class="fa-solid fa-envelope"></i>
+                    inapalbusiness@gmail.com</a>
+                <a class="d-block" href="https://www.linkedin.com/in/napalignacio/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i> napalignacio</a>
+                <a class="d-block" href="https://github.com/nachonapal" target="_blank"><i
+                        class="fa-brands fa-github"></i> Personal</a>
+                <a class="d-block" href="https://github.com/112905-Ignacio-Napal" target="_blank"><i
+                        class="fa-brands fa-github"></i>
+                    University</a>
             </div>
         </div>
     </footer>
@@ -313,9 +321,12 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5742e26460.js" crossorigin="anonymous"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="/index.js"></script>
+
 </body>
 
 </html>

@@ -2,12 +2,71 @@ body {
   background-color: #ebf0f5;
 }
 
+h1,
+h3 {
+  color: #396ab4;
+}
+
+textarea {
+  resize: none;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+input {
+  color: #396ab4 !important;
+  font-weight: 400 !important;
+}
+
+footer a {
+  color: #3969b2;
+  margin: 1rem 0;
+}
+
 .navbar :hover {
   color: #1e88e5 !important;
 }
 
 .navbar-brand {
   color: #1976d2 !important;
+}
+.card {
+  background-color: gainsboro;
+}
+.card-body p {
+  color: darkslategray;
+}
+
+.card-img-top {
+  height: 14rem;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+::-webkit-input-placeholder {
+  color: #c7c7c7;
+  opacity: 1;
+}
+::-moz-placeholder {
+  color: #c7c7c7;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #c7c7c7;
+  opacity: 1;
+}
+::-ms-input-placeholder {
+  color: #c7c7c7;
+  opacity: 1;
+}
+::placeholder {
+  color: #c7c7c7;
+  opacity: 1;
+}
+
+.section {
+  margin: 4rem 0 !important;
 }
 
 #hero-text {
@@ -21,11 +80,6 @@ body {
     linear-gradient(45deg, #ffffff 25%, #ebf0f5 25%) 0px 0/ 80px 80px;
 }
 
-h1,
-h3 {
-  color: #396ab4;
-}
-
 #hero-image {
   height: 94vh;
   background-color: #e5e5f7;
@@ -37,20 +91,12 @@ h3 {
     linear-gradient(45deg, #0d47a1 25%, #e5e5f7 25%) 0px 0/ 80px 80px;
 }
 
-textarea {
-  resize: none;
-}
-
 #sendButton {
   background-color: #396ab4 !important;
   color: whitesmoke !important;
 }
 #sendButton:hover {
   background-color: #1e88e5 !important;
-}
-
-footer a {
-  text-decoration: none;
 }
 
 #experience ul {
@@ -62,19 +108,6 @@ footer a {
 }
 #skills img {
   width: 25px;
-}
-
-.card {
-  background-color: gainsboro;
-}
-.card-body p {
-  color: darkslategray;
-}
-
-.card-img-top {
-  height: 14rem;
-  -o-object-fit: contain;
-  object-fit: contain;
 }
 
 @media (max-width: 576px) {
