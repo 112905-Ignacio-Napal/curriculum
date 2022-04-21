@@ -72,7 +72,7 @@ const saveForm = () => {
 
   if (!emailRegEx.test(email.value)) {
     hasError(email);
-    errorOn = "lastname";
+    errorOn = "email";
     return false;
   } else {
     isValid(email);
